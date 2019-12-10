@@ -1,0 +1,84 @@
+
+//Setup -------------------------------------------------
+
+
+
+
+@include border-box-sizing;
+
+
+$small: 22em;
+$medium: 47em;
+$large: 58em;	
+
+
+//Container -------------------------------------------------
+
+.layout {
+	padding: 0 .5rem;
+	@include breakpoint($medium) {
+	padding: 0;
+	@include container($large);	
+	}//tablet
+	}//layout
+	
+
+	
+
+
+
+
+body {
+background: $backcol;
+color: $tgrey;
+font-family: $font-primary;
+
+
+}
+#{headings()}{
+	font-weight: normal;
+
+}
+
+h1 {
+
+}
+
+
+h2 {
+
+}
+
+h4 {
+
+}
+
+a {
+	text-decoration: none;
+	@include transition(all 0.3s ease-in-out);
+	
+	&:hover {
+
+	}
+}
+
+p {
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+	@include breakpoint($medium) {
+	font-size: 0.875rem;
+	line-height: 1.2rem;
+	}//medium
+	}
+	
+	em {
+		font-style: italic;
+	}
+	strong {
+		font-weight: bold;
+	}
+	
+
+
+
+
